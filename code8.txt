@@ -1,5 +1,5 @@
 #include <stdio.h> // komentarz
-#include <math.h>
+#include <math.h> //komentarz2
 
 int kwadratowa(float a,float b,float c, float *x, float *y)
 {
