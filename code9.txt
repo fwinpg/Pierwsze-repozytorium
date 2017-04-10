@@ -1,4 +1,6 @@
 #include <stdio.h>
+//1
+//2
 
 int isEqual(char* str1, char* str2)
 {
