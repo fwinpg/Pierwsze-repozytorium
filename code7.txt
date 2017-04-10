@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+char * isElement(char *tab, char znak)
+{
+int i=0;
+for(i=0;tab[i]!='\0';i++)
+{
+if(tab[i]==znak)
+{
+return &tab[i];
+}
+}
+return NULL;
+}
+
+int main(){
+char napis[10];
+
+fgets(napis, 10, stdin);
+char *a=isElement(napis, 'e');
+
+if(a!=NULL)
+{
+printf("%c", *a);
+}else
+{
+printf("Nie znaleziono znaku");
+}
+
+}
