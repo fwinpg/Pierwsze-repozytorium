@@ -4,6 +4,7 @@
 //3
 //4
 //5
+//4
 
 int kwadratowa(float a,float b,float c, float *x, float *y)
 {
