@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+
+int kwadratowa(float a,float b,float c, float *x, float *y)
+{
+float wyroznik=b*b-4*a*c;
+float pierwiastek1;
+float pierwiastek2;
+float ilosc;
+if (wyroznik>0)
+{
+pierwiastek1=(-2*b+sqrt(wyroznik))/(2*a);
+pierwiastek2=(-2*b-sqrt(wyroznik))/(2*a);
+*x=pierwiastek1;
+*y=pierwiastek2;
+ilosc=2;
+return ilosc;
+}else if(wyroznik==0)
+{
+pierwiastek1=(-2*b)/(2*a);
+*x=pierwiastek1;
+ilosc=1;
+return ilosc;
+}else
+{
+ilosc=0;
+return ilosc;
+}
+}
+
+int main(){
+float d,e,f,x1,x2;
+scanf("%f, %f, %f", &d, &e, &f);
+int lmz=kwadratowa(d, e, f, &x1, &x2);
+if(lmz>1)
+{
+printf("%f, %f", x1, x2);
+}
+if(lmz==1)
+{
+printf("%f", x1);
+}
+if(lmz==0)
+{
+printf("Nie ma");
+}
+}
