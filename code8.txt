@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-#include <stdio.h> 
-#include <math.h>//komentarz
-=======
 #include <stdio.h> // komentarz
 #include <math.h>
->>>>>>> a17bef325c518fb14e105d9803514199445d23ed
+
 
 int kwadratowa(float a,float b,float c, float *x, float *y)
 {
