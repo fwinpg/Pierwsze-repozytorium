@@ -6,6 +6,7 @@
 //14
 //15
 //16
+//17
 int isEqual(char* str1, char* str2)
 {
 int T=1;
