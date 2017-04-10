@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> // komentarz
 #include <math.h>
 
 int kwadratowa(float a,float b,float c, float *x, float *y)
