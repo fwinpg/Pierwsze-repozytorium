@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+main()
+{
+
+char o;
+float p;
+float q;
+float w;
+
+scanf("%c %f %f", &o, &p, &q);
+
+switch(o)
+{
+        case '+':
+                w = p + q;
+                printf("%f", w);
+                break;
+        case '-':
+                w = p - q;
+                printf("%f", w);
+                break;
+        case '*':
+                w = p * q;
+                printf("%f", w);
+                break;
+        case '/':
+                if(q==0)
+                printf("Nie mozna dzielic przez 0");
+                else
+                {
+                w = p / q;
+                printf("%f", w);
+                break;
+                }
+
+
+}
+
+}
