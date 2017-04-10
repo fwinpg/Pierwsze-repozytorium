@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int isEqual(char* str1, char* str2)
+{
+int T=1;
+int F=0;
+int i;
+for(i=0;str1[i]!='\0' || str2[i];i++)
+{
+if(str1[i]!=str2[i])
+return F;
+}
+return T;
+}
+
+int main(){
+char char11[] = "Ala ma kota";
+char char12[] = "Ala ma kota";
+char char21[] = "Ala ma";
+char char22[] = "Ala ma kota";
+char char31[] = "Ala ma kota";
+char char32[] = "Ala ma";
+int a=isEqual(&char11, &char12);
+int b=isEqual(&char21, &char22);
+int c=isEqual(&char31, &char32);
+printf("%d, %d, %d", a, b, c);
+}
